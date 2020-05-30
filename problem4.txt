@@ -1,0 +1,24 @@
+1.
+    * types need to be able to convert implicitly between each other
+    * They need to be passed in by reference to reduce cost
+    * All the params have to be of the same CordinateType
+    * They all are consts
+
+2.
+    * You must create the new template for the copy cons
+    * you must pass it by reference (infinite recursion possiblity)
+
+3.
+    * new template different than the main template is needed
+    * similiar to copy cons
+
+4.
+    * They all need to be of the same type with the template name
+    * they are all private
+    * to access them you need to implement a getter to use them in other 
+      templates
+
+5.
+    * There needs to be either an implicit or a legal explicit call to the
+      parameters in order to return the apprporiate results
+  

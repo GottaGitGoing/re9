@@ -1,0 +1,13 @@
+I would think this program will compile but it increases the chance of
+failure thru the design choice that is stated. 
+
+The compiler will create a class when it sees the template. so it would need
+access to the implementation of the template as well. In a large scale problem,
+during the compilation, the linker needs to go through many files and might
+miss the template implementation when you want to use it (SINCE you did NOT 
+include the implementaiton in the template header file) thus it can throw 
+an error.
+
+    I believe that the compiler will be able to create the outline of the class
+    and how the class would "Look"overall, however it will fail to bring in 
+    the implementation since the linker could not provide it to the compiler.
